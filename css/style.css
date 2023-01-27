@@ -1,0 +1,214 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* container */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 166, 0, 0.288);
+}
+
+.logo {
+    width: 130px;
+    margin: 0 auto;
+}
+
+.logoTitle {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.container__navigation {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.filter {
+    display: flex;
+    position: relative;
+    align-self: flex-end;
+}
+
+.filter__logo {
+    width: 47px;
+    margin: 5px;
+    margin-right: 20px;
+}
+
+.filter__logo:hover {
+    border: 2px solid black;
+}
+
+.filter__logo:active {
+    border: 2px solid red;
+}
+
+.filter__titile {
+    text-align: center;
+    margin: auto 0;
+    font-size: 16px;
+    line-height: 12px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.search {
+    margin: 0 auto;
+}
+
+.search__input {
+    border: 1px solid #000000;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    width: 275px;
+
+}
+
+.menu {
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+    align-self: flex-end;
+}
+
+.menu__title {
+    text-align: center;
+    margin: auto 0;
+    font-size: 16px;
+    line-height: 12px;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.menu__logo {
+    width: 47px;
+    margin: 5px;
+}
+
+.btn__filter {
+    background: transparent;
+    border: none;
+}
+
+
+
+/* фильтр выпадающий */
+.filter__list {
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    display: none;
+
+}
+
+.filter__item {
+    list-style-image: url('/image/list-style-img.png');
+    padding: 5px;
+
+}
+
+.activFilter {
+    display: block;
+    background: #0000001f;
+    width: 100%;
+}
+
+.enableTitle {
+    color: transparent;
+}
+
+/* -----------test------------ */
+.test{
+    height: 400px;
+    border: 2px solid black;
+    margin: 20px 0;
+}
+/* ----------------------- */
+.container__navigation{
+    width: 1200px;
+    background-color: aliceblue;
+    z-index: 30;
+    margin-top: 10px;
+   
+}
