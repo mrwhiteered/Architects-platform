@@ -1,4 +1,5 @@
 const header = document.getElementById('nav');
+
 window.addEventListener("scroll", function() {
     if (window.scrollY >= 160) {
         header.style.position = "fixed";
