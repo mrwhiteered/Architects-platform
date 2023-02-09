@@ -24,9 +24,9 @@ filterTitle.classList.toggle('enableTitle'); // добавляем новый к
 
 // проверяем если добавлен класс для активных списков, то тогда меняется иконка фильтра 
 if (filterList.classList.contains('activFilter')) {
-    filterLogo.src="/image/menu_logo.png";
+    filterLogo.src="image/menu_logo.png";
 } else {
-    filterLogo.src="/image/filter_logo.png";
+    filterLogo.src="image/filter_logo.png";
 }
 });
 //---------------------------------------------------

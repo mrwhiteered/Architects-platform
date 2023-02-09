@@ -22,38 +22,39 @@
                 </a>
 
             </div>
-            <nav id="ded" class="nav">
-                <div id="nav" class="container__navigation">
-
-                    <div class="filter navigation openbtn">
-                        <button id="filterBtn" class="btn__filter">
-                            <img src="image/filter_logo.png" alt="filter" class="filter__logo">
-
-                            <ul id="filterList" class="filter__list">
-                                <li class="filter__item filterJs chooseAllFilters" onclick="filter('All')"> Все</li>
-                                <li class="filter__item chooseRA"  onclick="filter('RA')">Рекреационная архитектура</li>
-                                <li class="filter__item choosePZS" onclick="filter('PZS')"> Промышленные здания и сооружения</li>
-                                <li class="filter__item chooseRR " onclick="filter('RR')"> Реконструкция и реставрация</li>
-                                <li class="filter__item chooseAOZ" onclick="filter('AOZ')"> Архитектура общественных зданий</li>
-                            </ul>
-                        </button>
-                        <h2 id="filterTitle" class="filter__titile ">Область исследования</h2>
-                    </div>
-
-                    <div class="search navigation">
-                        <input class="search__input" placeholder="Введите ключевые слова">
-                    </div>
-
-                    <div class="menu navigation openbtn">
-                        <h2 class="menu__title">Meню</h2>
-                        <img src="image/menu_logo.png" alt="menu" class="menu__logo">
-                    </div>
-                </div>
-            </nav>
+           
         </div>
     </header>
 
     <main class="main">
+        <div id="ded" class="nav">
+            <div id="nav" class="container container__navigation">
+
+                <div class="filter navigation openbtn">
+                    <button id="filterBtn" class="btn__filter">
+                        <img src="image/filter_logo.png" alt="filter" class="filter__logo">
+
+                        <ul id="filterList" class="filter__list">
+                            <li class="filter__item filterJs chooseAllFilters" onclick="filter('All')"> Все</li>
+                            <li class="filter__item chooseRA"  onclick="filter('RA')">Рекреационная архитектура</li>
+                            <li class="filter__item choosePZS" onclick="filter('PZS')"> Промышленные здания и сооружения</li>
+                            <li class="filter__item chooseRR " onclick="filter('RR')"> Реконструкция и реставрация</li>
+                            <li class="filter__item chooseAOZ" onclick="filter('AOZ')"> Архитектура общественных зданий</li>
+                        </ul>
+                    </button>
+                    <h2 id="filterTitle" class="filter__titile ">Область исследования</h2>
+                </div>
+
+                <div class="search navigation">
+                    <input class="search__input" placeholder="Введите ключевые слова">
+                </div>
+
+                <div class="menu navigation openbtn">
+                    <h2 class="menu__title">Meню</h2>
+                    <img src="image/menu_logo.png" alt="menu" class="menu__logo">
+                </div>
+            </div>
+        </div>
         <!-- Контэйнер -->
         <div class="container">
         <div class="containerFilter" id="containerForFilter">
@@ -61,6 +62,7 @@
         </div> 
     </div>
     </main>
+    
     <footer></footer>
     <script src="JS/main.js"></script>
     <script src="JS/Filter.js"></script>
