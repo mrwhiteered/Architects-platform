@@ -162,7 +162,8 @@ function createadd(){
         let divadd2 = document.createElement('div');
         let newDescription = document.createElement('div'); //Описание 
         let divContainer = document.createElement('div'); // для всекго
-        let divText = document.createElement('p'); //ДЛЯ ТЕКСТА
+        let divText = document.createElement('p'); // ДЛЯ ТЕКСТА
+        let containerimg = document.createElement('div');// для картинки
         
         
 
@@ -185,7 +186,8 @@ function createadd(){
         
 
         newItem.appendChild(divContainer);
-        divContainer.appendChild(newImage);
+        divContainer.appendChild(containerimg);
+        containerimg.appendChild(newImage);
         divContainer.appendChild(containerNameDate);
         containerNameDate.appendChild(divadd);
         divadd.appendChild(nodeDateB);
@@ -196,10 +198,11 @@ function createadd(){
         
 
         divText.classList.add('correctTextDes');
-        divContainer.classList.add('toBottom');
+        containerimg.classList.add('toBottom');
         newItem.classList.add('filterItem');
         newItem.classList.add(category);
         newItem.classList.add('show');
+        newImage.classList.add('arhivImage');
         containerNameDate.classList.add('dateCreater');
 
         element.appendChild(newItem);

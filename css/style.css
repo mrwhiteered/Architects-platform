@@ -82,7 +82,7 @@ select {
 
 
 .container {
-    max-width: 1200px;
+    width: min(100% - 2rem, 1920px);
     margin: 0 auto;
     margin-top: 10px;
     
@@ -95,7 +95,7 @@ select {
 }
 .container__logo{
     margin: 0 auto;
-    max-width: 1200px;
+    width: min(100% - 2rem, 1920px);
     position: relative;
 }
 .logo_link{
@@ -163,7 +163,7 @@ color: #000000;
 }
 
 .filter__logo {
-    width: 47px;
+    
     margin: 5px;
     margin-right: 20px;
 }
@@ -294,6 +294,16 @@ line-height: 35px;
    
 }
 
+.toBottom{
+    overflow: hidden;
+}
+.toBottom img{
+    transition: 1s; /* Время эффекта */
+    display: block;
+}
+.toBottom img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+   }
 
 /* Фильтр */
 .filterItem{
@@ -318,8 +328,12 @@ line-height: 35px;
   .containerFilter{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    
     text-align: left;
+    width: min(100% - 2rem, 1900px);
+    margin:0 auto;
+    margin-top: 20px;
+    justify-content: space-between;
   }
 
 
@@ -368,7 +382,7 @@ font-size: 12px;
     position:-webkit-sticky; 
     position:sticky;
      bottom: 0;
-     background-color: white;
+ background-color: white;
       
     
   }
