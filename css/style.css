@@ -84,18 +84,59 @@ select {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 10px;
     
 }
 
 .logo {
     width: 130px;
     margin: 0 auto;
+    
 }
-
+.container__logo{
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+}
+.logo_link{
+    text-decoration: none;
+}
+.containerLogo__text{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
 .logoTitle {
+    
+    font-family: 'Vollkorn SC';
+font-style: normal;
+color: #000000;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
     display: block;
+    text-align: center;
+    text-decoration: none;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+.logo_text{
+    font-family: 'Vollkorn SC';
+font-style: normal;
+font-weight: 400;
+font-size: 7px;
+line-height: 10px;
+
+align-items: center;
+text-align: center;
+text-transform: lowercase;
+
+color: #000000;
 }
 /* Эта хуйня помогает останавливать прокрутку хэдера */
 .nav{
@@ -136,6 +177,12 @@ select {
     line-height: 12px;
     text-transform: uppercase;
     display: block;
+
+    font-family: 'Vollkorn SC';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 35px;
 }
 
 .search {
@@ -149,6 +196,25 @@ select {
     text-align: center;
     width: 275px;
 
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+
+display: flex;
+align-items: center;
+text-align: center;
+
+}
+.search__container{
+    position: relative;
+}
+.searchLogo{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
 }
 
 .menu {
@@ -166,6 +232,12 @@ select {
     text-transform: uppercase;
     margin-right: 20px;
     margin-left: auto;
+
+    font-family: 'Vollkorn SC';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 35px;
 }
 
 .menu__logo {
@@ -286,3 +358,38 @@ font-size: 12px;
 
   }
   
+
+.wrap{
+    border-bottom: 1px solid black;
+    height: 1px;
+}
+  .footer{
+    
+    position:-webkit-sticky; 
+    position:sticky;
+     bottom: 0;
+     background-color: white;
+      
+    
+  }
+  .btn__publication{
+    margin-top: 13px;
+    background: transparent;
+    border: 1px solid #000000;
+border-radius: 30px;
+margin-bottom: 13px;
+z-index: 30;
+
+
+
+
+  }
+  .container__footer{
+  display: flex;
+  justify-content: center;
+ 
+  max-width: 300px;
+  margin: 0 auto;
+  
+  
+  }

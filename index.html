@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atch-Platform</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,10 +18,17 @@
     <header class="header">
         <div class="container">
             <div class="upper__header">
-                <a href="index.html">
-                    <h1 class="logoTitle">
-                        <img src="image/logo.png" alt="Logo Arch-Platcform" class="logo" #id="logo" />
-                    </h1>
+                <a href="index.html" class="logo_link">
+                    <div class="container__logo">
+                    
+                        <img src="image/logoArcaSVG.svg" alt="Logo Arch-Platcform" class="logo" #id="logo" />
+                        <div class="containerLogo__text">
+                        <h1 class="logoTitle"> ARCH PUB</h1>
+                        <h2 class="logo_text">architectural <br> publishing</h2>
+                    </div>
+                        
+                    
+                </div>
                 </a>
 
             </div>
@@ -32,7 +42,7 @@
 
                 <div class="filter navigation openbtn">
                     <button id="filterBtn" class="btn__filter">
-                        <img src="image/filter_logo.png" alt="filter" class="filter__logo">
+                        <img src="image/filterLogoSvg.svg" alt="filter" class="filter__logo">
 
                         <ul id="filterList" class="filter__list">
                             <li class="filter__item filterJs chooseAllFilters" onclick="filter('All')"> Все</li>
@@ -46,24 +56,35 @@
                 </div>
 
                 <div class="search navigation">
-                    <input class="search__input" placeholder="Введите ключевые слова">
+                    <div class="search__container">
+                        <img src="image/searchLogo.png" class="searchLogo"/>
+                    <input class="search__input" placeholder="Введите ключевые слова или название работы">
+                    
+                </div>
                 </div>
 
                 <div class="menu navigation openbtn">
                     <h2 class="menu__title">Meню</h2>
-                    <img src="image/menu_logo.png" alt="menu" class="menu__logo">
+                    <img src="image/menuSvg.svg" alt="menu" class="menu__logo">
                 </div>
             </div>
         </div>
         <!-- Контэйнер -->
+        
         <div class="container">
         <div class="containerFilter" id="containerForFilter">
 
         </div> 
     </div>
     </main>
-    
-    <footer></footer>
+    <div class="wrap"></div>
+    <footer class="footer">
+        
+        <div class="container__footer">
+        <button class="btn__publication">Я хочу пиццы</button>
+    </div>
+
+    </footer>
     <script src="JS/main.js"></script>
     <script src="JS/Filter.js"></script>
     <script src="JS/Arhiv.js"></script>
