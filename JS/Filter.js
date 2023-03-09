@@ -3,7 +3,7 @@ let filterList = document.getElementById('filterList');
 let filterBtn = document.getElementById('filterBtn');
 let filterTitle = document.getElementById('filterTitle')
 let filterItem = document.querySelectorAll('.filter__item');
-
+let toBottom = document.getElementsByClassName('toBottom')
 
 // Смена цвета выбранного фильтра
 // for( let i = 0; i < filterItem.length; i++){ 
@@ -25,8 +25,17 @@ filterTitle.classList.toggle('enableTitle'); // добавляем новый к
 // проверяем если добавлен класс для активных списков, то тогда меняется иконка фильтра 
 if (filterList.classList.contains('activFilter')) {
     filterLogo.src="image/filterLogoSvgBlack.svg";
+//  for (let i= 0;toBottom.length >i; i++ ){
+//        toBottom[i].classList.add('disable-pointer-events');
+//      }
+    
+    // document.body.classList.add('overlay'); блокировать весь экран при открытом фильтре 
 } else {
     filterLogo.src="image/filterLogoSvg.svg";
+    //  document.body.classList.remove('overlay'); // попытка сделать слой некликабельный на весь боди
+    //  for (let i= 0;toBottom.length >i; i++ ){ // попытка отключить масштабирование при открытом фильтре
+    //      toBottom[i].classList.remove('disable-pointer-events');
+    //  }
 }
 });
 //---------------------------------------------------
@@ -69,3 +78,4 @@ function removeClass () {
         allFilterItem[i].classList.remove('show');
     }
 }
+

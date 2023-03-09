@@ -64,10 +64,18 @@
                 </div>
                 </div>
 
-                <div class="menu navigation openbtn">
-                    <h2 class="menu__title">Meню</h2>
+                <div class="openbtn">
+                    <button id="menuOpn" class="menu navigation openbtn btn__menu">
+                    <h2 id="menuTitle" class="menu__title">Meню</h2>
+                    <ul id="menuList" class="memu__list">
+                        <li class="menu__item"> <a href="" class="menu__link">на главную</a></li>
+                        <li class="menu__item"> <a href="" class="menu__link">все публикации</a></li>
+                        <li class="menu__item"> <a href="" class="menu__link">хочу публиковаться</a></li>
+                        <li class="menu__item"> <a href="" class="menu__link">о проекте</a></li>
+                    </ul>
                     <img src="image/menuSvg.svg" alt="menu" class="menu__logo">
-                </div>
+                </button>
+            </div>
             </div>
         </div>
         <!-- Контэйнер -->
@@ -89,6 +97,7 @@
     <script src="JS/main.js"></script>
     <script src="JS/Filter.js"></script>
     <script src="JS/Arhiv.js"></script>
+    <script src="JS/openFilterMenu.js"></script>
 </body>
 
 </html>
